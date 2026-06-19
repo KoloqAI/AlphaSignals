@@ -183,6 +183,8 @@ flowchart TD
 
 ---
 
+**Mobile adaptation.** On phones the three-panel shell collapses to a single column with native patterns: the **left rail → a drawer** (hamburger), the **right panel** (pinned cards / active-votes stack) **→ a bottom sheet**, top-level navigation **→ a bottom tab bar** (Chat · Markets · Groups · Account), and the Markets takeover **→ a single stacked column**. `ConsentTicket` and `VoteCard` present as **bottom sheets** with a touch hold-to-confirm. Because members act on calls and `/panic` from their phones, mobile gets **push notifications** (PWA web push) for calls, panics, and passed votes.
+
 ### 4.2 Design system (carried forward, reconciled)
 
 The dark, institutional-terminal aesthetic from the prior 4.2 carries forward as **semantic tokens** (not raw utility classes): base/surface/border layers, bullish=success, bearish=danger, AI/intelligence=info, mono type for all numbers/tickers/prices, sans for chrome. The 3-panel resizable layout and keybindings (`Cmd/Ctrl+B` left, `Cmd/Ctrl+J` right) remain.
@@ -190,7 +192,7 @@ The dark, institutional-terminal aesthetic from the prior 4.2 carries forward as
 New, binding rules added by this revision:
 - **Facts vs. model views are visually distinct everywhere.** Computed/deterministic data (RSI, P/E, greeks) renders in a neutral zone; LLM/agent interpretation renders in a labeled "model view — evidence, not advice" zone. Never blended.
 - **Never blur/tease the user's own data** — only premium *analysis* gets a gated treatment (§4.5).
-- **Responsive is in scope.** The Cockpit and `ConsentTicket` must have a mobile layout; members act on calls from phones. (The prior `h-screen w-screen` desktop-only assumption is dropped.)
+- **Mobile-first, not desktop-with-breakpoints.** The whole shell adapts: left rail → drawer, right panel → bottom sheet, nav → bottom tab bar, Markets → stacked column. `ConsentTicket`/`VoteCard` are bottom sheets with touch hold-to-confirm; no hover-only affordances; touch targets ≥ 44px. (The prior `h-screen w-screen` desktop-only assumption is dropped.)
 - **Status uses color + icon + text** (never color alone); WCAG AA contrast; full keyboard path for voting and consent.
 
 ---
@@ -301,7 +303,7 @@ The streaming → consensus → settlement lifecycle from the prior 4.3 carries 
 **Account / auth:** `AuthScreen` (Discord / Google / email) · `PlansPricing` + `UpgradeSheet` (standalone + group-context + modal) · `AccountPage` (Profile / Subscription / Brokerage / Groups / Security) · `UsageMeters` · `BillingPanel` (Stripe).
 
 ### 4.7 Cross-cutting requirements
-- **Responsive:** Cockpit and `ConsentTicket` have first-class mobile layouts.
+- **Mobile-first:** the entire shell adapts (drawer / bottom-nav / bottom-sheets), `ConsentTicket` & `VoteCard` are touch bottom sheets, and **PWA + web push** delivers calls, panics, and passed votes when the app is backgrounded.
 - **Accessibility:** color+icon+text status, keyboard path for vote/consent, WCAG AA, ARIA on live regions (vote gauges, fills).
 - **Never paywall** own-money views or the consent/safety flow (§4.0.5).
 - **Empty/error states are first-class:** first-run room, broker-not-linked (every money component degrades to "connect your broker"), approval-locked option rows (shown disabled with a reason, never hidden).

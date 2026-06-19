@@ -53,5 +53,12 @@
 
 > Add a one-time dependency **license audit** scoped to everything in the data and order paths as a release gate.
 
+## Responsive & mobile (Phase 1: responsive web + PWA)
+- **Mobile-first responsive** via Tailwind breakpoints — designed for phones, not desktop-with-breakpoints.
+- **Shell adaptation:** left rail → drawer; right panel (pinned / active votes) → **bottom sheet**; top-level nav → **bottom tab bar**; Markets → single stacked column.
+- **Touch:** `ConsentTicket` & `VoteCard` render as bottom sheets; hold-to-confirm works on touch; no hover-only affordances; targets ≥ 44px.
+- **Notifications:** **PWA** (installable) + **Web Push** via a service worker for calls, `/panic`, and passed votes — essential because members act from their phones (VAPID web-push or a push provider).
+- **Native** (React Native / Expo) is **deferred**; Phase 1 ships responsive web + PWA.
+
 ## Deferred to later phases
 SnapTrade (multi-broker), multi-leg options, a custom market-data trigger engine, backtesting, time-series prediction in the platform's voice, Stripe Connect / payouts, the Discord bot surface (connector only at first).

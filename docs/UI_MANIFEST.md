@@ -34,6 +34,9 @@ Conceptual references (not routes): `00-ia-two-gravities`, `01-shell-four-states
 
 **Account/auth:** `AuthScreen` (Discord/Google/email) · `AccountPage` (Profile/Subscription/Brokerage/Groups/Security) · `UsageMeters` · `BillingPanel` (Stripe).
 
+
+**Mobile / responsive:** `BottomNav` (Chat · Markets · Groups · Account) · `Drawer` (rail) · `BottomSheet` (hosts `ConsentTicket` / `VoteCard` / `ActiveStack` / pinned) · stacked Markets. Mobile is first-class, not an afterthought.
+
 ## Recommended build order
 1. `AppShell` + `LeftRail` + `TopBar` + token theme (the four-state skeleton).
 2. `AuthScreen` → land in fresh solo chat on Free.
@@ -50,3 +53,4 @@ Conceptual references (not routes): `00-ia-two-gravities`, `01-shell-four-states
 - Entitlement resolves against **session context** server-side (solo = user tier; group = group tier); the trade loop fires only from a natively-run, entitlement-checked action.
 - `ConsentTicket` quantity is computed at **tap time** against live buying power; show drift status + disclaimer.
 - Every order/vote/consent transition writes the **append-only audit log** with the rule-set version in force.
+- **Mobile-first:** the shell adapts to drawer / bottom-nav / bottom-sheets; consent and voting work on touch; PWA web push delivers calls, panics, and passed votes.
