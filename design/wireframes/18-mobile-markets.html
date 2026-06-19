@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./_tokens.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.2.0/dist/tabler-icons.min.css"><title>Alpha-Signals wireframe</title></head><body><style>
+.phone{width:300px;margin:18px auto;border:7px solid #222;border-radius:32px;overflow:hidden;background:var(--color-background-primary);height:600px;display:flex;flex-direction:column;position:relative}
+.tb{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:0.5px solid var(--color-border-tertiary);font-size:13px}
+.toggle{display:inline-flex;border:0.5px solid var(--color-border-secondary);border-radius:999px;overflow:hidden;font-size:11px}.toggle span{padding:3px 10px}.toggle .act{background:var(--color-background-info);color:var(--color-text-info)}.toggle .ina{color:var(--color-text-tertiary)}
+.main{flex:1;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.nav{display:flex;align-items:center;justify-content:space-around;border-top:0.5px solid var(--color-border-tertiary);padding:7px 0 9px;color:var(--color-text-tertiary)}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px}.nav .ti{font-size:19px}.nav .on{color:var(--color-text-info)}
+.mn{font-family:var(--font-mono);font-weight:500}.mut{color:var(--color-text-secondary)}.tny{font-size:11px;color:var(--color-text-tertiary)}
+.handle{width:30px;height:4px;border-radius:2px;background:var(--color-border-secondary);margin:0 auto 8px}
+.pill{font-size:11px;font-weight:500;padding:1px 8px;border-radius:5px;background:var(--color-background-success);color:var(--color-text-success)}
+.gauge{height:5px;border-radius:3px;background:var(--color-border-secondary);margin:6px 0 3px;overflow:hidden}.gfill{height:100%;background:var(--color-text-success)}
+</style>
+<div class="phone">
+<div class="tb"><span class="toggle"><span class="ina">Chat</span><span class="act">Markets</span></span><i class="ti ti-user-circle"></i></div>
+<div class="main" style="overflow:auto">
+<div style="padding:12px 13px;display:flex;flex-direction:column;gap:11px">
+<div style="border:0.5px solid var(--color-border-secondary);border-radius:999px;padding:8px 13px;color:var(--color-text-tertiary);font-size:12px"><i class="ti ti-search"></i> Search a ticker or option…</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="mn" style="font-size:17px">NVDA</span> <span class="mut" style="font-size:12px">NVIDIA</span><br><span class="mn" style="font-size:15px">$124.10</span> <span style="color:var(--color-text-success);font-size:12px">+1.2%</span></div></div>
+<div style="display:flex;gap:5px"><span class="tny" style="border:0.5px solid var(--color-border-info);color:var(--color-text-info);border-radius:6px;padding:2px 9px">1W</span><span class="tny" style="border:0.5px solid var(--color-border-tertiary);border-radius:6px;padding:2px 9px">1M</span><span class="tny" style="border:0.5px solid var(--color-border-tertiary);border-radius:6px;padding:2px 9px">1Y</span></div>
+<svg width="100%" viewBox="0 0 280 80" preserveAspectRatio="none" style="display:block"><polyline fill="none" stroke="var(--color-text-info)" stroke-width="2" points="0,64 30,58 60,62 90,46 120,50 150,34 180,40 210,26 240,30 280,18"/></svg>
+<div style="border:0.5px solid var(--color-border-tertiary);border-radius:8px;padding:10px 12px"><div class="tny" style="margin-bottom:7px"><i class="ti ti-activity"></i> Technicals</div><span class="mn" style="font-size:12px;background:var(--color-background-secondary);border-radius:6px;padding:3px 8px;margin-right:5px">RSI 71</span><span class="mn" style="font-size:12px;background:var(--color-background-secondary);border-radius:6px;padding:3px 8px;margin-right:5px">P/E 34</span><span class="mn" style="font-size:12px;background:var(--color-background-secondary);border-radius:6px;padding:3px 8px">IV 42%</span></div>
+<div style="border:0.5px solid var(--color-border-tertiary);border-radius:8px;padding:10px 12px;font-size:12px"><div class="tny" style="margin-bottom:6px"><i class="ti ti-wallet"></i> Your positions</div><div style="display:flex;justify-content:space-between"><span>NVDA · 0.80</span><span class="mn" style="color:var(--color-text-success)">+4.20</span></div><div style="display:flex;justify-content:space-between;margin-top:4px"><span>AAPL · 1.20</span><span class="mn" style="color:var(--color-text-danger)">-1.10</span></div></div>
+</div>
+</div>
+<div class="nav"><div><i class="ti ti-message"></i>Chat</div><div class="on"><i class="ti ti-chart-candle"></i>Markets</div><div><i class="ti ti-users"></i>Groups</div><div><i class="ti ti-user"></i>Account</div></div>
+</div>
+</body></html>
