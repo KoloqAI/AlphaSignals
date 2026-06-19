@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./_tokens.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.2.0/dist/tabler-icons.min.css"><title>Alpha-Signals wireframe</title></head><body>
+<style>
+.win{border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);overflow:hidden;display:grid;grid-template-columns:58px 1fr 224px;height:430px;font-size:12px;max-width:860px}
+.col{padding:10px;overflow:hidden}.rail{background:var(--color-background-secondary);display:flex;flex-direction:column;gap:8px;align-items:center;padding-top:12px}
+.rdot{width:30px;height:30px;border-radius:8px;background:var(--color-border-secondary)}.rdot.sel{background:var(--color-text-info)}
+.mid{border-left:0.5px solid var(--color-border-tertiary);border-right:0.5px solid var(--color-border-tertiary);display:flex;flex-direction:column}
+.ghead{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.feed{flex:1;padding:12px;display:flex;flex-direction:column;gap:10px}.msg{display:flex;gap:8px}
+.av{flex:0 0 24px;height:24px;border-radius:50%;background:var(--color-background-info);color:var(--color-text-info);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500}
+.bub{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:6px 10px;color:var(--color-text-secondary)}
+.vcard{border:2px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:10px 12px}
+.pill{font-size:11px;font-weight:500;padding:2px 8px;border-radius:6px;background:var(--color-background-success);color:var(--color-text-success)}
+.mn{font-family:var(--font-mono);font-weight:500}.gauge{height:6px;border-radius:3px;background:var(--color-border-secondary);margin:8px 0 4px;overflow:hidden}.fill{height:100%;background:var(--color-text-success)}
+.mut{color:var(--color-text-secondary)}.tny{font-size:11px;color:var(--color-text-tertiary)}.rt{background:var(--color-background-secondary)}
+.mini{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:8px 10px;margin-bottom:8px}
+.btn{font-size:11px;border:0.5px solid var(--color-border-secondary);border-radius:6px;padding:3px 10px;background:transparent}
+</style>
+<div class="win">
+<div class="col rail"><div class="rdot"></div><div class="rdot sel"></div><div class="rdot"></div><div class="rdot" style="border-radius:50%"></div></div>
+<div class="mid"><div class="ghead"><div><span style="font-weight:500">Friday Syndicate</span> <span class="tny">· closed · 6 members</span></div><span class="tny"><i class="ti ti-shield-lock"></i> committed $12k</span></div>
+<div class="feed"><div class="msg"><div class="av">DK</div><div class="bub">NVDA looking strong into earnings, thinking a starter here</div></div><div class="msg"><div class="av">RP</div><div class="bub">agree, let's put it to a vote</div></div>
+<div class="vcard"><div style="display:flex;align-items:center;gap:8px;margin-bottom:2px"><span class="pill">BUY</span><span class="mn">NVDA</span><span class="tny">limit $124.50 · by DK</span></div><div class="gauge"><div class="fill" style="width:60%"></div></div><div style="display:flex;justify-content:space-between"><span class="tny">12 / 20 · 60% reached</span><span class="tny"><i class="ti ti-clock"></i> 3:12</span></div><div style="display:flex;gap:8px;margin-top:8px"><button class="btn" style="color:var(--color-text-success)"><i class="ti ti-arrow-up"></i> Upvote</button><button class="btn">Pass</button></div></div>
+<div class="tny" style="text-align:center"><i class="ti ti-info-circle"></i> Passing fans out a consent ticket to each member — it does not auto-buy</div></div></div>
+<div class="col rt"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span style="font-weight:500">Active</span><span class="tny">3 open</span></div>
+<div class="mini"><div style="display:flex;align-items:center;gap:6px"><span class="pill">BUY</span><span class="mn">NVDA</span></div><div class="gauge"><div class="fill" style="width:60%"></div></div><div class="tny">60% · 3:12 left</div></div>
+<div class="mini"><div style="display:flex;align-items:center;gap:6px"><span class="pill" style="background:var(--color-background-danger);color:var(--color-text-danger)">SELL</span><span class="mn">TSLA</span></div><div class="gauge"><div class="fill" style="width:35%;background:var(--color-text-danger)"></div></div><div class="tny">35% · 1:40 left</div></div>
+<div class="mini" style="border:2px solid var(--color-border-info)"><div style="display:flex;align-items:center;gap:6px"><i class="ti ti-lock"></i><span class="mn">AAPL</span><span class="tny">close · passed</span></div><div style="margin-top:6px"><button class="btn" style="width:100%;color:var(--color-text-success)"><i class="ti ti-hand-finger"></i> Hold to confirm</button></div></div>
+<div style="border-top:0.5px solid var(--color-border-tertiary);margin-top:4px;padding-top:8px" class="tny"><i class="ti ti-pin"></i> Pinned · /research NVDA</div></div>
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./_tokens.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.2.0/dist/tabler-icons.min.css"><title>Alpha-Signals wireframe</title></head><body>
+<style>
+.win{border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);overflow:hidden;display:grid;grid-template-rows:auto 1fr;height:440px;font-size:12px;max-width:860px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.wm{font-weight:600;font-size:13px}
+.toggle{display:inline-flex;border:0.5px solid var(--color-border-secondary);border-radius:999px;overflow:hidden;font-size:11px}.toggle span{padding:4px 12px}.toggle .act{background:var(--color-background-info);color:var(--color-text-info);font-weight:500}.toggle .ina{color:var(--color-text-tertiary)}
+.tier{font-size:11px;background:var(--color-background-secondary);border-radius:999px;padding:3px 10px;color:var(--color-text-secondary)}
+.uic{width:26px;height:26px;border-radius:50%;background:var(--color-background-secondary);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--color-text-secondary)}
+.body{display:grid;grid-template-columns:158px 1fr 196px;height:100%;overflow:hidden}
+.rail{border-right:0.5px solid var(--color-border-tertiary);padding:12px 10px;display:flex;flex-direction:column;gap:6px;background:var(--color-background-secondary)}
+.newbtn{font-size:12px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:6px 8px;background:var(--color-background-primary);text-align:left}
+.sec{font-size:11px;color:var(--color-text-tertiary);margin-top:8px}
+.lk{font-size:12px;color:var(--color-text-secondary);padding:3px 6px;border-radius:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lk.sel{background:var(--color-background-primary);color:var(--color-text-primary)}
+.mid{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center}
+.greet{font-size:18px;font-weight:500;margin-bottom:14px}
+.input{width:100%;max-width:340px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;color:var(--color-text-tertiary);display:flex;justify-content:space-between;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px;max-width:360px}
+.chip{font-size:11px;border:0.5px solid var(--color-border-tertiary);border-radius:999px;padding:4px 11px;color:var(--color-text-secondary)}
+.modelline{font-size:11px;color:var(--color-text-tertiary);margin-top:12px}.up{color:var(--color-text-info)}
+.right{border-left:0.5px solid var(--color-border-tertiary);padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--color-text-tertiary)}
+</style>
+<div class="win">
+<div class="top"><span class="wm">Alpha-Signals</span><div class="toggle"><span class="act">Chat</span><span class="ina">Markets</span></div><div style="display:flex;align-items:center;gap:10px"><span class="tier"><i class="ti ti-sparkles"></i> Pro</span><div class="uic">VK</div></div></div>
+<div class="body">
+<div class="rail"><div class="newbtn"><i class="ti ti-plus"></i> New chat</div><div class="sec">Recent</div><div class="lk sel">NVDA earnings setup</div><div class="lk">Options on TSLA</div><div class="lk">Sector rotation idea</div><div class="sec">Groups</div><div class="lk"><i class="ti ti-shield-lock"></i> Friday Syndicate</div><div class="lk"><i class="ti ti-users"></i> r/SwingTraders</div></div>
+<div class="mid"><div class="greet">What do you want to research?</div><div class="input"><span>Ask anything, or type <span style="font-family:var(--font-mono)">/</span> for commands</span><i class="ti ti-arrow-up"></i></div><div class="chips"><span class="chip">/research NVDA</span><span class="chip">/ta on a ticker</span><span class="chip">Find option ideas</span><span class="chip">Scan my watchlist</span></div><div class="modelline">Powered by the Strong model · <span class="up">Upgrade to Premium for the frontier model &#8594;</span></div></div>
+<div class="right"><i class="ti ti-pin" style="font-size:18px;margin-bottom:6px"></i><div style="font-size:11px">Pinned research and your chat summary appear here as you go.</div></div>
+</div></div>
+</body></html>

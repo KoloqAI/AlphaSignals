@@ -1,0 +1,24 @@
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.auth{max-width:360px;margin:0 auto;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:30px 26px;background:var(--color-background-primary);text-align:center}
+.logo{width:42px;height:42px;border-radius:11px;background:var(--color-background-info);color:var(--color-text-info);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px}
+.bn{font-size:18px;font-weight:600}.tag{font-size:13px;color:var(--color-text-secondary);margin:4px 0 22px}
+.pbtn{width:100%;display:flex;align-items:center;justify-content:center;gap:9px;padding:11px;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;margin-bottom:10px;border:0.5px solid var(--color-border-secondary);background:transparent;color:var(--color-text-primary);cursor:pointer}
+.discord{background:#5865F2;color:#fff;border-color:transparent}
+.divr{display:flex;align-items:center;gap:10px;color:var(--color-text-tertiary);font-size:11px;margin:14px 0}
+.divr::before,.divr::after{content:"";flex:1;height:0.5px;background:var(--color-border-tertiary)}
+.email{width:100%;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:10px 12px;font-size:13px;color:var(--color-text-tertiary);text-align:left;margin-bottom:10px}
+.foot{font-size:11px;color:var(--color-text-tertiary);margin-top:16px;line-height:1.5}
+</style>
+<h2 class="sr-only">Login screen with Discord, Google, and email sign-in.</h2>
+<div class="auth">
+  <div class="logo"><i class="ti ti-chart-candle"></i></div>
+  <div class="bn">Alpha-Signals</div>
+  <div class="tag">AI research &amp; democratic trading groups</div>
+  <button class="pbtn discord"><i class="ti ti-brand-discord"></i> Continue with Discord</button>
+  <button class="pbtn"><i class="ti ti-brand-google"></i> Continue with Google</button>
+  <div class="divr">or</div>
+  <div class="email">you@email.com</div>
+  <button class="pbtn" style="background:var(--color-background-secondary)">Continue with email</button>
+  <div class="foot">By continuing you agree to the Terms &amp; Privacy. Alpha-Signals is a tool, not an investment adviser.</div>
+</div>
